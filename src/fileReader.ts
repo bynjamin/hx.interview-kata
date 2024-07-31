@@ -8,8 +8,8 @@ const throwInvalidInputError = () => {
 export const getInputFromFile = (fileName: string) => {
     const robotsData: RobotData[] = [];
     const allFileContents = fs.readFileSync(fileName, 'utf-8');
-    const lines = allFileContents.split(/\r?\n/);
-    lines.forEach((line) => line.trim());
+    let lines = allFileContents.split(/\r?\n/);
+    lines = lines.map((line) => line.trim());
     if (lines.length < 3) {
         throwInvalidInputError();
     }
