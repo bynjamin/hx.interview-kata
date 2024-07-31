@@ -29,11 +29,13 @@ Each rover will be finished sequentially, which means that the second rover won`
 the first one has finished moving.
 
 ### OUTPUT
+
 The output for each rover should be its final coordinates and heading.
 
 ### EXAMPLE
 
 Test Input:
+
 ```
 5 5
 1 2 N
@@ -43,6 +45,7 @@ MMRMMRMRRM
 ```
 
 Expected Output:
+
 ```
 1 3 N
 5 1 E
